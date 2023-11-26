@@ -1,10 +1,22 @@
 /* work sans fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
+/* shared styles */
 * {
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary{
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background: #FF900E;
+    padding: 20PX 25PX;
+    cursor: pointer;
+    border: 0;
 }
 
 /* header styles */
@@ -55,4 +67,30 @@ nav li a{
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive styles */
+
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
